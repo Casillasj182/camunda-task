@@ -1,0 +1,15 @@
+div{
+    justify-content: center;
+    text-align: center;
+}
+table {
+  width: 100%;
+}
+
+mat-icon {
+  cursor: pointer;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}

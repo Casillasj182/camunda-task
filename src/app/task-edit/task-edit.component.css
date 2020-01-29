@@ -1,0 +1,21 @@
+.foo
+{
+    margin-left: 25px;
+    width: 1400px;
+    border: 1px solid #000000
+}
+label{
+    margin-left: 25px;
+}
+p{
+    margin-left: 25px;
+}
+.btn-primary
+{
+    color:#fff;
+    background-color: #b5152b;
+    border-color: #9e1226;
+}
+button{
+    margin-left: 1250px;
+}

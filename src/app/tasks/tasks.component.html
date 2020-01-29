@@ -1,0 +1,50 @@
+<div>
+    &nbsp;
+    <br>
+    <h2> User Tasks </h2>
+    <br>
+</div>
+
+<!-- Data is provided to the table through dataSource  -->
+<!-- Gets the task and finds the id, name and asssignee for each one-->
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+
+
+         <ng-container matColumnDef="processInstanceId">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>processInstanceId</th>
+          <td mat-cell *matCellDef="let element">
+          <a [routerLink]="['/tasks', element.processInstanceId]" >{{element.processInstanceId}}</a>
+          <!-- <a [routerLink] ="['/taskedit',element.processInstanceId]">{{element.processInstanceId}}</a>  -->
+
+        </ng-container>
+
+        
+
+         <!-- name Column -->
+         <!-- ng container is a logical container used to group nodes -->
+         <ng-container matColumnDef="name">
+           <th mat-header-cell *matHeaderCellDef mat-sort-header> Task Name </th>
+           <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+         </ng-container>
+
+
+          <ng-container matColumnDef="assignee">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Assignee</th>
+            <td mat-cell *matCellDef="let element"> {{element.assignee}} </td>
+            <!-- <a routerLink="/taskedit">{{element.assignee}}</a>  -->
+          </ng-container>
+          
+          
+        <!-- </ng-container> -->
+       
+           <!-- description Column -->
+           <ng-container matColumnDef="description">
+             <th mat-header-cell *matHeaderCellDef mat-sort-header> Task Description </th>
+             <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+           </ng-container>
+      
+         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+       </table>
+       
+       

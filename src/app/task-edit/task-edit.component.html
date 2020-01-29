@@ -1,0 +1,61 @@
+<h1>Assign Reviewer </h1>
+<mat-tab-group >
+    <mat-tab >
+      <ng-template mat-tab-label>Form</ng-template>
+
+
+      <!-- Creditor Field -->
+      <br>
+      <br>
+      <label>Creditor</label>
+      <div>
+        <input type="text" class="foo" name= "creditor" value="joe">
+      </div><br>
+      
+      <!-- Amount Field -->
+      <label>Amount</label>
+      <div>
+        <input type="text " class="foo" name= "amount">
+      </div><br>
+
+    <!-- Invoice Number Field -->
+      <label >Invoice Number</label>
+      <div>
+        <input type="text"class="foo" name= "invoicenumber">
+      </div><br>
+
+      <!-- Reviewer Field -->
+      <label> Reviewer: </label>
+      <div>
+        <input type="text" class="foo" name= reviewer>
+      </div>
+      <p>Who should review this invoice?</p>
+
+    
+      <button type="submit"> Save</button>    
+      <!-- <button type="submit"> Complete</button> -->
+
+
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+       History
+      </ng-template>
+      <h1>History Tab works!</h1>
+      <p>...</p>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+       Diagram
+        </ng-template>
+        <h1>Diagram Tab works!</h1>
+        <p>...</p>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+       Description
+        </ng-template>
+        <h1>Description Tab works!</h1>
+        <p>...</p>
+      </mat-tab>
+  </mat-tab-group>
